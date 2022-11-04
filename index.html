@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <div class="contents">
+    <div class="left-side">
+      <div class="banner">
+        <img src="lib/odin-lined.png" alt="odin logo" class="logo">
+        Odin
+      </div>
+      <div></div>
+    </div>
+
+    <div class="right-side">
+      <div class="right-top">
+        <div class="pitch">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
+        <div class="pitch-2">You <em>know</em> you want to.</div>
+      </div>
+      <div class="right-middle">
+        <div class="motivational-phrase">Let's do this!</div>
+        <form action="#" method="post" class="sign-up-form" id="sign-up-form">
+          <label for="first-name">First Name <input type="text" id="first-name" name="first-name" placeholder="Austin" required></label>
+
+          <label for="last-name">Last Name <input type="text" id="last-name" name="last-name" placeholder="Darrow" required></label>
+
+          <label for="email">Email <input type="email" id="email" name="email" placeholder="ADarrow@utexas.edu" required></label>
+
+          <label for="phone">Phone Number <input type="tel" id="phone" name="phone"
+                 required pattern="\d{3}-\d{3}-\d{4}" placeholder="123-456-7890"
+                 title="accepted format: 123-456-7890"></label>
+
+          <label for="pwd1">Password
+            <input type="password" id="pwd1" name="password1" placeholder="********" required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+            title="At least 8 characters, including 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character">
+          </label>
+
+          <label for="pwd2">Confirm Password <input type="password" id="pwd2" name="password2" placeholder="********" required></label>
+        </form>
+      </div>
+      <div class="buttons">
+        <button type="submit" class="create-account-button" form="sign-up-form" id="submit-button">Create Account</button>
+        <div class="log-in">
+          Already have an account?
+          <a href="https://github.com/austin-darrow">Log in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

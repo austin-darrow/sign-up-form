@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'norsebold';
+  src: url('./fonts/norse-bold-webfont.woff2') format('woff2'), url('./fonts/norse-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-size: x-large;
+}
+
+body {
+  background-color: black;
+}
+
+.contents {
+  display: flex;
+  background-color: whitesmoke;
+  margin: 20px 200px 0 200px;
+  height: 95vh;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  background-image: url(lib/background.avif);
+  width: 80%;
+  color: whitesmoke;
+}
+
+.banner {
+  height: 15%;
+  font-family: 'norsebold';
+  font-size: 4rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 1, 1, 0.5);
+  flex: 1 1 auto;
+  padding: 10px 0;
+  margin-bottom: 60%;
+}
+
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.right-top {
+  height: 33%;
+}
+
+.pitch {
+  padding: 17% 17% 2% 50px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.pitch-2 {
+  padding-left: 50px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.right-middle {
+  background-color: white;
+  height: 33%;
+  box-shadow: 0 5px 5px rgb(226, 223, 223);
+}
+
+.motivational-phrase {
+  padding: 25px 170px 0 50px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.sign-up-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 7%;
+  grid-row-gap: 7%;
+  padding: 25px 30% 25px 50px;
+}
+
+.buttons {
+  padding: 35px 50px;
+}
+
+label {
+  display: flex;
+  flex-flow: column;
+  text-transform: uppercase;
+  font-size: 0.65rem;
+}
+
+input {
+  font-size: 0.8rem;
+  padding: 5px 5px;
+  border-radius: 8px;
+}
+
+input:hover:invalid {
+  border-color: red;
+}
+
+input:hover,
+input:focus {
+  background-color: whitesmoke;
+  border-color:rgb(89, 131, 89);
+}
+
+input:valid {
+  border-color: rgb(89, 131, 89);
+}
+
+.create-account-button {
+  height: 2rem;
+  width: 10rem;
+  background-color: rgb(89, 131, 89);
+  font-size: 0.7rem;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 2px 2px 5px rgb(197, 196, 196);
+  margin-bottom: 3%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.log-in a {
+  color:rgb(89, 131, 89);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.create-account-button:hover {
+  background-color: rgb(102, 167, 102);
+  font-size: 0.74rem;
+}
+
+.log-in a:hover {
+  color: rgb(102, 167, 102);
+}
+
+@media (min-width: 700px) and (max-width: 1300px) {
+  .contents {
+    display: block;
+    height: auto;
+    margin: auto;
+  }
+
+  .left-side {
+    width: auto;
+    height: 300px;
+  }
+
+  .banner {
+    height: 70px;
+    margin-top: 50vh;
+    font-size: 3rem;
+  }
+
+  .pitch {
+    padding-top: 30px;
+  }
+
+  .pitch-2 {
+    padding-bottom: 30px;
+  }
+
+  .sign-up-form {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contents {
+    display: block;
+    height: auto;
+    margin: auto;
+  }
+
+  .left-side {
+    width: 95vw;
+    height: 300px;
+  }
+
+  .banner {
+    height: 70px;
+    margin-top: 300px;
+    font-size: 3rem;
+  }
+
+  .sign-up-form {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+  }
+
+  .pitch {
+    padding-top: 40px;
+  }
+  .pitch-2 {
+    margin-bottom: 40px;
+  }
+}
